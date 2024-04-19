@@ -1,0 +1,19 @@
+class Solution {
+    public int commonFactors(int a, int b) {
+        int x,count=0;
+        if(a<b)
+        x=a;
+        else if(a>b)
+        x=b;
+        else
+        x=a;
+        for(int i=1;i<=x;i++)
+        {
+            if(a%i==0 && b%i==0)
+            {
+                count++;
+            }
+        }
+        return count;
+    }
+}
